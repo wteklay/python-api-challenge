@@ -13,4 +13,10 @@ Next, a linear regression for each realtionship was computed for the Northern an
 
 ## VacationPy
 
-Geoapify API and the geoViews Python library was employed to create map visulaizations of humidity for every city in the DataFrame. 
+Geoapify API and the geoViews Python library was employed to create map visulaizations of humidity for every city in the DataFrame. DataFrame was narrowed down to only include ideal weather conditions such as:
+
+* Max temperature lower than 27 degress but higher than 21
+* Wind speed less than 4.5 m/s
+* Zero cloudiness 
+
+Lastly, a new DataFrame was created to store the city, country, coordinates, and humidity of the filtered DataFrame. Hotel names were also amended using Geoapigy API to locate the first hotel within 10,000 meters of the coordinates. 
